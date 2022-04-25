@@ -1,0 +1,109 @@
+.logo a {
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0C2E3D;
+}
+
+.btn-login {
+    border: 1.3px solid #0C2E3D;
+    background-color: #F8F7F1;
+    color: #0C2E3D;
+}
+
+.btn-partner {
+    border: 0px;
+    background-color: #F77F00;
+    color: #F8F7F1;
+}
+
+.btn-donate {
+    border: 0px;
+    background-color: #F8D9B5;
+    color: #0C2E3D;
+}
+
+.card-body img {
+    max-width: 50px;
+}
+
+.backtotop-img img {
+    padding-left: 8px;
+    height: 12px;
+}
+
+
+
+/* --- */
+.h1s {
+    font-size: 60px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #0C2E3D;
+    line-height: 68px;
+}
+
+.h2s {
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #0C2E3D;
+}
+
+.h4s {
+    font-family: 'Fredoka One', cursive;
+    color: #FDFDFD;
+}
+
+.h5s {
+    font-family: 'Ubuntu', sans-serif;
+    color: #0C2E3D;
+}
+
+.ps {
+    font-family: 'Ubuntu', sans-serif;
+    color: #0C2E3D;
+}
+
+.as {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.btns {
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+
+/* colors */
+.bg-color1 {
+    background-color: #F8F7F1;
+}
+
+.bg-color2 {
+    background-color: #FDFDFD;
+}
+
+.bg-color3 {
+    background-color: #87B547;
+}
+
+.text-color1 {
+    color: #0C2E3D;
+}
+
+.text-color2 {
+    color: #FDFDFD;
+}
+
+.text-color3 {
+    color: #F77F00;
+}
