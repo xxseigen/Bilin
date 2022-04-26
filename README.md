@@ -2,7 +2,9 @@
 
 ---
 
-Bilin is a food rescue and donation platform made with made with React that allows forward thinking people and businesses to connect with local nonprofits.
+Bilin is a food rescue and donation platform that allows forward-thinking people and businesses to connect with the network of local nonprofits organizations who are interested in hosting feeding programs, community pantries, etc with the use of rescued surplus foods. 
+
+Bilin is an entry developed by a team of four students from Xavier University - Ateneo de Cagayan who are participating and aiming to be included in the top 50 of the annual Solution Challenge International Competition. It is a proposed solution that focuses on The ‘Zero Hunger’ and ‘Sustainable Development and Production’ SDGs, specifically the food hunger and food waste problems are the targets that the bilin is looking to solve with technology.
 
 ## Table of Contents
 
