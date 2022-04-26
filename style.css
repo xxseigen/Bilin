@@ -70,10 +70,6 @@
     text-decoration: none;
 }
 
-ul li {
-    list-style-type: none;
-}
-
 .btns {
     border-radius: 8px;
     padding: 6px 12px;
