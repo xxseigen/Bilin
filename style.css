@@ -64,7 +64,6 @@
 .h1s {
     font-size: 60px;
     font-family: 'Archivo Black', sans-serif;
-    line-height: 68px;
 }
 
 .h2s {
@@ -95,7 +94,7 @@
 
 .btns {
     border-radius: 8px;
-    padding: 6px 12px;
+    padding: 3px 8px;
     cursor: pointer;
 }
 
@@ -139,4 +138,31 @@
 
 .text-color3 {
     color: #F77F00;
+}
+
+
+
+/* responsive */
+@media (max-width: 992px) {
+    .h1s {
+        font-size: 40px;     
+    }
+
+    .h2s {
+        font-size: 30px;
+    }
+
+    .ps {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .h1s {
+        font-size: 38px;     
+    }
+
+    .h2s {
+        font-size: 28px;
+    }
 }
