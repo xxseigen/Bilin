@@ -58,6 +58,12 @@
     height: 23px;
 }
 
+.aside {
+    float: left;
+    position: sticky;
+    top: 3em;
+}
+
 
 
 /* --- */
