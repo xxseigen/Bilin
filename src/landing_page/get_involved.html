@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
@@ -19,57 +19,31 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-color1 py-3">
-        <div class="container">
-            <div class="logo">
-                <a class="navbar-brand text-color1" href="#">Bilin</a>
-            </div>
-
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navmenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="/src/index.html" class="nav-link"><span class="sr-only">HOME</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/src/landing_page/get_involved.html" class="nav-link">GET INVOLVED</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/src/landing_page/knowledge_hub.html" class="nav-link">KNOWLEDGE HUB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/src/landing_page/about_us.html" class="nav-link">ABOUT US</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="/src/landing_page/faq.html" class="nav-link">FAQ</a>
-                    </li>
-                </ul>
-                <button class="btns btn-login ms-auto d-md-none">LOG IN</button>
-            </div>
-
-            <button class="btns btn-login ms-auto d-none d-md-block">LOG IN</button>
-        </div>
-    </nav>
-
+    <div class="sticky-top">
+        <script id="replace_with_navbar" src="/scripts/nav.js"></script>
+    </div>
+    
     <!-- Google Maps -->
-    <svg class="bd-placeholder-img card-img-top" height="100vh" xmlns="http://www.w3.org/2000/svg" role="img"
-        aria-label="Placeholder: Google Maps" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#868e96"></rect>
-        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Google Maps</text>
-    </svg>
+    <div id="googleMap" style="width:100%; height:68vh;"></div>
+    <script>
+        function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(8.454236,124.631897),
+                zoom:15,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZm4A62u1UahYWE9WomHs9yzQG8N-QrfY&callback=myMap"></script>
 
     <!-- Pinned Event -->
     <section class="p-5 bg-color2">
         <div class="container">
             <div class="d-flex">
-                <a class="pin-img"><img src="images/pin.svg"></a>
+                <a class="pin-img"><img src="/images/pin.svg"></a>
                 <h3 class="h3s" href="#"><b>Pinned Event</b></h3>
             </div>
-            <img class="img-fluid" src="images/redcross_pinnedevent.png">
+            <img class="img-fluid" src="/images/redcross_pinnedevent.png">
         </div>
     </section>
 
@@ -87,7 +61,7 @@
                     <button class="btn-round mx-1">Bookmarked</button>
                 </div>
                 <div class="d-flex">
-                    <img src="images/filter.svg">
+                    <img src="/images/filter.svg">
                     <button class="btns text-color2 mx-2" style="border: 0px; background-color: #F77F00;">+ Create new
                         event</button>
                 </div>
@@ -107,7 +81,7 @@
                             <h6 class="card-subtitle mb-2 text-muted">Date, Time</h6>
                             <h5 class="card-title">Event name</h5>
                             <p class="card-text">Address line 1<br>Address line 2</p>
-                            <a href="#" class="btns as bg-color3 text-color2">VIEW DETAILS</a>
+                            <button class="btns as bg-color3 text-color2" onclick="showEventDetails()">VIEW DETAILS</button>
                         </div>
                     </div>
                     <div class="card" style="width: 16rem;">
@@ -123,7 +97,7 @@
                             <h6 class="card-subtitle mb-2 text-muted">Date, Time</h6>
                             <h5 class="card-title">Event name</h5>
                             <p class="card-text">Address line 1<br>Address line 2</p>
-                            <a href="#" class="btns as bg-color3 text-color2">VIEW DETAILS</a>
+                            <button class="btns as bg-color3 text-color2" onclick="showEventDetails()">VIEW DETAILS</button>
                         </div>
                     </div>
                     <div class="card" style="width: 16rem;">
@@ -139,7 +113,7 @@
                             <h6 class="card-subtitle mb-2 text-muted">Date, Time</h6>
                             <h5 class="card-title">Event name</h5>
                             <p class="card-text">Address line 1<br>Address line 2</p>
-                            <a href="#" class="btns as bg-color3 text-color2">VIEW DETAILS</a>
+                            <button class="btns as bg-color3 text-color2" onclick="showEventDetails()">VIEW DETAILS</button>
                         </div>
                     </div>
                     <div class="card" style="width: 16rem;">
@@ -155,7 +129,7 @@
                             <h6 class="card-subtitle mb-2 text-muted">Date, Time</h6>
                             <h5 class="card-title">Event name</h5>
                             <p class="card-text">Address line 1<br>Address line 2</p>
-                            <a href="#" class="btns as bg-color3 text-color2">VIEW DETAILS</a>
+                            <button class="btns as bg-color3 text-color2" onclick="showEventDetails()">VIEW DETAILS</button>
                         </div>
                     </div>
                 </div>
@@ -164,57 +138,218 @@
     </section>
 
     <!-- Footer -->
-    <section class="bg-color3 p-5 text-center text-md-start">
-        <div class="container">
-            <div class="d-md-flex align-items-start justify-content-between">
-                <div>
-                    <h4 class="h4s font-weight-bold">Bilin</h4>
-                    <p class="text-color2">Bilin is a platform that makes the donation process easier, allowing
-                        forward-thinking people and businesses to connect with nonprofit organizations and community
-                        pantries that need their help the most.</p>
+    <script id="replace_with_footer" src="/scripts/footer.js"></script>
+
+    <!-- Modals -->
+    <!-- Event details -->
+    <script>
+        var modalWrap = null;
+        const showEventDetails = () => {
+        if(modalWrap !== null){
+            modalWrap.remove();
+        }
+
+        modalWrap = document.createElement('div');
+        modalWrap.innerHTML = `
+            <div class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Event name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
-                <hr class="w-100 clearfix d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Navigate</b></h5>
-                    <a href="index.html" class="as text-color2">Home</a>
-                    <a href="get_involved.html" class="as text-color2">Get Involved</a>
-                    <a href="knowledge_hub.html" class="as text-color2">Knowledge Hub</a>
-                    <a href="about_us.html" class="as text-color2">About Us</a>
-                    <a href="faq.html" class="as text-color2">FAQ</a>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
                 </div>
-
-                <hr class="my-3 d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Useful Links</b></h5>
-                    <a href="#DonationGuidelines" class="as text-color2">Donation Guidelines</a>
-                    <a href="#Terms&Conditions" class="as text-color2">Terms & Conditions</a>
-                    <a href="#PrivacyPolicy" class="as text-color2">Privacy Policy</a>
+                <div class="modal-footer">
+                    <button type="button" class="btns bg-color3 text-color2" onclick='showDonateForm()'>DONATE</button>
+                    <button type="button" class="btns bg-color3 text-color2" onclick='showVolunteerForm()'>VOLUNTEER</button>
                 </div>
-
-                <hr class="my-3 d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Contact Us</b></h5>
-                    <a href="#emailadd" class="as text-color2">teamhiraya@gmail.com</a>
                 </div>
             </div>
-            <hr>
-            <div class="ps d-flex justify-content-between">
-                <p>&copy 2022 Bilin. All rights reserved.</p>
-                <div>
-                    <a class="ps as" href="#">Back to Top</a>
-                    <a class="backtotop-img" href="#"><img src="images/backtotop.svg"></a>
+            </div>
+        `;
+
+        document.body.append(modalWrap);
+        var modal = new bootstrap.Modal(modalWrap.querySelector(`.modal`));
+        modal.show();
+        }
+    </script>
+    <!-- Donation form -->
+    <script>
+        var modalWrap = null;
+        const showDonateForm = () => {
+        if(modalWrap !== null){
+            modalWrap.remove();
+        }
+
+        modalWrap = document.createElement('div');
+        modalWrap.innerHTML = `
+            <div class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="font-weight: bolder;">Donate food for this event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <p style="font-weight: bold;">WHEN WOULD YOU LIKE TO DELIVER YOUR DONATION?</p>
+                        <div class="row">
+                            <div class="col">
+                                <p style="font-weight: bold;">Date</p>
+                                <input type="date">
+                            </div>
+                            <div class="col">
+                                <p style="font-weight: bold;">Time</p>
+                                <input type="time">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-weight: bold;">FOOD DONATION DETAILS</p>
+                        <div>
+                            <p style="font-weight: bold;">Food to donate:</p>
+                            <textarea rows="3"  placeholder="Add description"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p style="font-weight: bold;">Number of people donation will serve</p>
+                            <input type="number" class="col-2" placeholder="0">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p style="font-weight: bold;">Food is individually portioned and packaged</p>
+                            <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">Yes</label>
+                            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No</label>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p style="font-weight: bold;">Food Expiry Date</p>
+                                <input type="date">
+                            </div>
+                            <div>
+                                <p style="font-weight: bold;">Food Freshness</p>
+                                <input type="range" id="range" min="0" max="5">
+                            </div>
+                        </div>
+                        <div>
+                            <p style="font-weight: bold;">REASON FOR DONATION</p>
+                            <div class="row d-flex justify-content-between">
+                                <div class="col">
+                                    <label><input type="checkbox" value="">Close to expiration</label>
+                                    <label><input type="checkbox" value="">Rejected by Customer</label>
+                                    <label><input type="checkbox" value="">Promotion/Marketing</label>
+                                </div>
+                                <div class="col">
+                                    <label><input type="checkbox" value="">Excess Inventory</label>
+                                    <label><input type="checkbox" value="">Labeling Error/Change</label>
+                                    <label><input type="checkbox" value="">Damaged</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p style="font-weight: bold;">UPLOAD PHOTOS</p>
+                            <input type="file" class="form-control" id="inputGroupFile01">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btns bg-color3 text-color2">SUBMIT</button>
+                </div>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        `;
+
+        document.body.append(modalWrap);
+        var modal = new bootstrap.Modal(modalWrap.querySelector(`.modal`));
+        modal.show();
+        }
+    </script>
+    <!-- Volunteer form -->
+    <script>
+        var modalWrap = null;
+        const showVolunteerForm = () => {
+        if(modalWrap !== null){
+            modalWrap.remove();
+        }
+
+        modalWrap = document.createElement('div');
+        modalWrap.innerHTML = `
+            <div class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="font-weight: bolder;">Volunteer for this event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p style="font-weight: bold;">CONTACT INFORMATION</p>
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-weight: bold">First name</p>
+                            <input type="text" id="input" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <p style="font-weight: bold">Last name</p>
+                            <input type="text" id="input" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p style="font-weight: bold;">Title</p>
+                            <select id="select">
+                                <option value="">Mr.</option>
+                                <option value="">Mrs.</option>
+                                <option value="">Ms.</option>
+                            </select>                        
+                        </div>
+                        <div class="col">
+                            <p style="font-weight: bold;">Occupation</p>
+                            <select id="select">
+                                <option value="">Choose</option>
+                                <option value="">Full-time employee</option>
+                                <option value="">Part-time employee</option>
+                                <option value="">Student</option>
+                                <option value="">Retired</option>
+                                <option value="">Unemployed</option>
+                            </select>    
+                        </div>
+                        <div class="col">
+                            <p style="font-weight: bold;">Date of birth</p>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-weight: bold;">Contact number</p>
+                            <input type="tel" placeholder="Contact number">
+                        </div>
+                        <div class="col">
+                            <p style="font-weight: bold;">Email address</p>
+                            <input type="email" placeholder="Email address">
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-weight: bold;">Home address</p>
+                        <textarea rows="3" placeholder="Home address"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btns bg-color3 text-color2">SUBMIT</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        `;
+
+        document.body.append(modalWrap);
+        var modal = new bootstrap.Modal(modalWrap.querySelector(`.modal`));
+        modal.show();
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

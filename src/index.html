@@ -18,48 +18,17 @@
     <script type="module" src="script.js"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md bg-color1 py-3">
-        <div class="container">
-            <div class="logo">
-                <a class="navbar-brand text-color1" href="#">Bilin</a>
-            </div>
-
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navmenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="/src/index.html" class="nav-link"><span class="sr-only">HOME</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/src/landing_page/get_involved.html" class="nav-link">GET INVOLVED</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/src/landing_page/knowledge_hub.html" class="nav-link">KNOWLEDGE HUB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/src/landing_page/about_us.html" class="nav-link">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/src/landing_page/faq.html" class="nav-link">FAQ</a>
-                    </li>
-                </ul>
-            </div>
-
-            <a style="text-decoration: none;" href="/src/landing_page/login_page.html"><button
-                    class="btns btn-login ms-auto d-none d-md-block">LOG
-                    IN</button></a>
-        </div>
-    </nav>
-
+<body class="text-color1">
+    <!-- Navbar -->
+    <div class="sticky-top">
+        <script id="replace_with_navbar" src="/scripts/nav.js"></script>
+    </div>
+    
     <!-- Header -->
-    <section class="header bg-color1 p-5 text-center text-md-start">
+    <section class="header bg-color1 align-items-center text-center text-md-start" style="width: 100%;">
         <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
+            <div class="d-md-flex align-items-center justify-content-between">
+                <div class="p-4">
                     <h1 class="h1s" style="max-width: 460px;">Get involved in solving food hunger</h1>
                     <p class="ps my-3" style="max-width: 460px">By empowering those who empower others, we at Bilin are
                         trying to spark the Filipino spirit of Bayanihan like never before.</p>
@@ -76,67 +45,75 @@
     <section class="p-5 bg-color2">
         <div class="container">
             <h2 class="h2s text-center">How You Can Help</h2>
-            <p class="ps text-center pb-4">Get involved and be part of our cause.</p>
-            <div class="row gy-4">
-                <div class="col">
-                    <div class="card"
-                        style="width: 190px; height: 240px; border: 1.3px solid #F77F00; border-radius: 18px; background-color: #F8F7F1;">
-                        <div class="card-body">
-                            <img class="img-fluid" src="/images/locate.svg" alt="">
-                            <h5 class="h5s card-title my-3"><b>Locate</b></h5>
-                            <p class="ps card-text">Find NGOs and community pantries near you.</p>
+            <p class="ps text-center pb-4">Get involved and be part of our cause.</p>  
+
+            <div class="d-flex justify-content-center">
+                <div class="row gy-4">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" id="feature">
+                            <div class="card-body">
+                                <a>
+                                    <img class="img-fluid" src="/images/locate.svg">
+                                    <img class="img-fluid" src="/images/locate-1.svg">
+                                </a>
+                                <h5 class="h5s card-title my-3"><b>Locate</b></h5>
+                                <p class="ps card-text">Find NGOs and community pantries near you.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card"
-                        style="width: 190px; height: 240px; border: 1.3px solid #F77F00; border-radius: 18px; background-color: #F8F7F1;">
-                        <div class="card-body">
-                            <img class="img-fluid" src="/images/donate.svg" alt="">
-                            <h5 class="h5s card-title my-3"><b>Donate</b></h5>
-                            <p class="ps card-text">Donate your surplus food to NGOs and nearby community pantries.</p>
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" id="feature">
+                            <div class="card-body">
+                                <a>
+                                    <img class="img-fluid" src="/images/donate.svg">
+                                    <img class="img-fluid" src="/images/donate-1.svg">
+                                </a>                                <h5 class="h5s card-title my-3"><b>Donate</b></h5>
+                                <p class="ps card-text">Donate your surplus food to NGOs and nearby community pantries.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card"
-                        style="width: 190px; height: 240px; border: 1.3px solid #F77F00; border-radius: 18px; background-color: #F8F7F1;">
-                        <div class="card-body">
-                            <img class="img-fluid" src="/images/volunteer.svg" alt="">
-                            <h5 class="h5s card-title my-3"><b>Volunteer</b></h5>
-                            <p class="ps card-text">Volunteer on events organized by NGOs like feeding programs.</p>
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" id="feature">
+                            <div class="card-body">
+                                <a>
+                                    <img class="img-fluid" src="/images/volunteer.svg">
+                                    <img class="img-fluid" src="/images/volunteer-1.svg">
+                                </a>                                <h5 class="h5s card-title my-3"><b>Volunteer</b></h5>
+                                <p class="ps card-text">Volunteer on events organized by NGOs like feeding programs.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card"
-                        style="width: 190px; height: 240px; border: 1.3px solid #F77F00; border-radius: 18px; background-color: #F8F7F1;">
-                        <div class="card-body">
-                            <img class="img-fluid" src="/images/initiate.svg" alt="">
-                            <h5 class="h5s card-title my-3"><b>Initiate</b></h5>
-                            <p class="ps card-text">Co-host a feeding program with NGOs or set up a community pantry.
-                            </p>
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" id="feature">
+                            <div class="card-body">
+                                <a>
+                                    <img class="img-fluid" src="/images/initiate.svg">
+                                    <img class="img-fluid" src="/images/initiate-1.svg">
+                                </a>                                <h5 class="h5s card-title my-3"><b>Initiate</b></h5>
+                                <p class="ps card-text">Co-host a feeding program with NGOs or set up a community pantry.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </section>
 
     <!-- Mission -->
     <section class="bg-color1 pl-5 pr-5 pb-5 text-center text-md-start">
         <div class="container">
             <div class="d-md-flex align-items-center justify-content-center">
-                <img class="img-fluid" src="/images/philmap.svg" alt="" style="max-height: 600px;">
-                <div style="width: min-content;">
-                    <h2 class="h2s">Our Mission</h2>
-                    <p class="ps">The Hiraya team is trying to address the prevalent food hunger problem in the country
+                <img class="img-fluid" src="/images/philmap.svg" alt="" style="max-height: 600px; margin-bottom: 5%;">
+                <div style="width: min-content; margin-left: 15%;">
+                    <h2 class="h2s" style="margin-bottom: 5%; margin-top: 12%;">Our Mission</h2>
+                    <p class="ps", style="font-size: larger;">The Hiraya team is trying to address the prevalent food hunger problem in the country
                         with the Bilin app. Bilin is a platform that makes the donation process easier, allowing
                         forward-thinking people and businesses to connect with nonprofit organizations and community
                         pantries that need their help the most.</p>
-                    <p class="ps">We are prioritising the donation of surplus food to tackle two of the most difficult
+                    <p class="ps", style="font-size: larger;">We are prioritising the donation of surplus food to tackle two of the most difficult
                         SDGs: No Hunger and Food Waste.</p>
-                    <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center" style="margin-top: 10%; margin-right: 5%;">
                         <div class="mx-5 text-center">
                             <h1 class="h1s text-color3">19</h5>
                                 <h5 class="h5s text-color1"><b>Partnered<br>With Us</b></h5>
@@ -152,53 +129,8 @@
     </section>
 
     <!-- Footer -->
-    <section class="bg-color3 p-5 text-center text-md-start">
-        <div class="container">
-            <div class="d-md-flex align-items-start justify-content-between">
-                <div>
-                    <h4 class="h4s font-weight-bold">Bilin</h4>
-                    <p class="text-color2">Bilin is a platform that makes the donation process easier, allowing
-                        forward-thinking people and businesses to connect with nonprofit organizations and community
-                        pantries that need their help the most.</p>
-                </div>
 
-                <hr class="w-100 clearfix d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Navigate</b></h5>
-                    <a href="index.html" class="as text-color2">Home</a>
-                    <a href="get_involved.html" class="as text-color2">Get Involved</a>
-                    <a href="knowledge_hub.html" class="as text-color2">Knowledge Hub</a>
-                    <a href="about_us.html" class="as text-color2">About Us</a>
-                    <a href="faq.html" class="as text-color2">FAQ</a>
-                </div>
-
-                <hr class="my-3 d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Useful Links</b></h5>
-                    <a href="#DonationGuidelines" class="as text-color2">Donation Guidelines</a>
-                    <a href="#Terms&Conditions" class="as text-color2">Terms & Conditions</a>
-                    <a href="#PrivacyPolicy" class="as text-color2">Privacy Policy</a>
-                </div>
-
-                <hr class="my-3 d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Contact Us</b></h5>
-                    <a href="#emailadd" class="as text-color2">teamhiraya@gmail.com</a>
-                </div>
-            </div>
-            <hr>
-            <div class="ps d-flex justify-content-between">
-                <p>&copy 2022 Bilin. All rights reserved.</p>
-                <div>
-                    <a class="ps as" href="#">Back to Top</a>
-                    <a class="backtotop-img" href="#"><img src="/images/backtotop.svg"></a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <script id="replace_with_footer" src="/scripts/footer.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

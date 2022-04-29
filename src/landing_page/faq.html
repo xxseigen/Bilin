@@ -13,291 +13,270 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Ubuntu&display=swap"
     rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <title>Bilin</title>
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />  <title>Bilin</title>
 </head>
-
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md bg-color1 py-3">
-    <div class="container">
-      <div class="logo">
-        <a class="navbar-brand text-color1" href="#">Bilin</a>
-      </div>
-
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center" id="navmenu">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="/src/index.html" class="nav-link"><span class="sr-only">HOME</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="/src/landing_page/get_involved.html" class="nav-link">GET INVOLVED</a>
-          </li>
-          <li class="nav-item">
-            <a href="/src/landing_page/knowledge_hub.html" class="nav-link">KNOWLEDGE HUB</a>
-          </li>
-          <li class="nav-item">
-            <a href="/src/landing_page/about_us.html" class="nav-link">ABOUT US</a>
-          </li>
-          <li class="nav-item active">
-            <a href="/src/landing_page/faq.html" class="nav-link">FAQ</a>
-          </li>
-        </ul>
-        <button class="btns btn-login ms-auto d-md-none">LOG IN</button>
-      </div>
-
-      <button class="btns btn-login ms-auto d-none d-md-block">LOG IN</button>
-    </div>
-  </nav>
+  <div class="sticky-top">
+    <script id="replace_with_navbar" src="/scripts/nav.js"></script>
+  </div>
 
   <!-- Header -->
   <section class="p-5 bg-color1">
     <div class="container">
       <h1 class="h1s text-color1 text-center">Frequently Asked Questions</h1>
-      <div class="d-md-flex text-center text-md-start justify-content-center">
-        <p class="ps text-color3" style="padding-right: 5px">
-          Send your questions by email to
-        </p>
-        <a href="@emailadd" class="as ps text-color1">teamhiraya@gmail.com</a>
-      </div>
+      <p class="ps text-color3 text-center">
+        Send your questions by email to <a class="text-color1" href="emailto: teamhiraya@gmail.com" style="text-decoration: none;">teamhiraya@gmail.com</a>
+      </p>
     </div>
   </section>
 
   <!-- Questions -->
-  <section class="bg-color2 p-5">
+  <section class="p-5 bg-color2">
     <div class="container">
-      <div class="faq-outline"></div>
-
-      <!-- General -->
-      <div class="pb-5">
-        <h3 class="h3s text-color1 text-align-left">General</h3>
-        <div class="accordion accordion-flush" id="general-accordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="general1-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#general1-collapse" aria-expanded="false" aria-controls="general1-collapse">
-                Question 1
-              </button>
-            </h2>
-            <div id="general1-collapse" class="accordion-collapse collapse" aria-labelledby="general1-heading"
-              data-bs-parent="#general-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="general2-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#general2-collapse" aria-expanded="false" aria-controls="general2-collapse">
-                Question 2
-              </button>
-            </h2>
-            <div id="general2-collapse" class="accordion-collapse collapse" aria-labelledby="general2-heading"
-              data-bs-parent="#general-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="general3-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#general3-collapse" aria-expanded="false" aria-controls="general3-collapse">
-                Question 3
-              </button>
-            </h2>
-            <div id="general3-collapse" class="accordion-collapse collapse" aria-labelledby="general3-heading"
-              data-bs-parent="#general-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
-              </div>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <aside class="aside">
+            <p class="ps text-color1" style="font-size: 20px; font-weight: bold;">Table of Contents</p>
+              <nav">
+                <ul class="nav navbar-nav">
+                  <li><a href="#general" class="nav-link" style="font-weight: bold;">General</a></li>
+                  <li><a href="#food-donations" class="nav-link" style="font-weight: bold;">Food Donation</a></li>
+                  <li><a href="#events" class="nav-link" style="font-weight: bold;">Events</a></li>
+                  <li><a href="#partnership" class="nav-link" style="font-weight: bold;">Partnership</a></li>
+                </ul>
+              </nav>
+          </aside>
         </div>
-      </div>
-
-      <!-- Food Donations -->
-      <div class="pb-5">
-        <h3 class="h3s text-color1 text-align-left">Food Donations</h3>
-        <div class="accordion accordion-flush" id="donation-accordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="donation1-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#donation1-collapse" aria-expanded="false" aria-controls="donation1-collapse">
-                Question 1
-              </button>
-            </h2>
-            <div id="donation1-collapse" class="accordion-collapse collapse" aria-labelledby="donation1-heading"
-              data-bs-parent="#donation-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
+        <div class="col-sm-9">
+          <!-- General -->
+          <div class="pb-5">
+            <h2 id="general" class="h3s text-color1 text-align-left" style="font-weight: bolder; scroll-margin-top: 5em;">General</h2>
+            <div class="accordion accordion-flush" id="general-accordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="general1-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#general1-collapse" aria-expanded="false" aria-controls="general1-collapse">
+                    What is Bilin?
+                  </button>
+                </h3>
+                <div id="general1-collapse" class="accordion-collapse collapse" aria-labelledby="general1-heading"
+                  data-bs-parent="#general-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="general2-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#general2-collapse" aria-expanded="false" aria-controls="general2-collapse">
+                    Question 2
+                  </button>
+                </h3>
+                <div id="general2-collapse" class="accordion-collapse collapse" aria-labelledby="general2-heading"
+                  data-bs-parent="#general-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="general3-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#general3-collapse" aria-expanded="false" aria-controls="general3-collapse">
+                    Question 3
+                  </button>
+                </h3>
+                <div id="general3-collapse" class="accordion-collapse collapse" aria-labelledby="general3-heading"
+                  data-bs-parent="#general-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="donation2-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#donation2-collapse" aria-expanded="false" aria-controls="donation2-collapse">
-                Question 2
-              </button>
-            </h2>
-            <div id="donation2-collapse" class="accordion-collapse collapse" aria-labelledby="donation2-heading"
-              data-bs-parent="#donation-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
+    
+          <!-- Food Donations -->
+          <div class="pb-5">
+            <h2 id="food-donations" class="h3s text-color1 text-align-left" style="font-weight: bolder; scroll-margin-top: 5em;">Food Donations</h2>
+            <div class="accordion accordion-flush" id="donation-accordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="donation1-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#donation1-collapse" aria-expanded="false" aria-controls="donation1-collapse">
+                    Question 1
+                  </button>
+                </h3>
+                <div id="donation1-collapse" class="accordion-collapse collapse" aria-labelledby="donation1-heading"
+                  data-bs-parent="#donation-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="donation2-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#donation2-collapse" aria-expanded="false" aria-controls="donation2-collapse">
+                    Question 2
+                  </button>
+                </h3>
+                <div id="donation2-collapse" class="accordion-collapse collapse" aria-labelledby="donation2-heading"
+                  data-bs-parent="#donation-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="donation3-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#donation3-collapse" aria-expanded="false" aria-controls="donation3-collapse">
+                    Question 3
+                  </button>
+                </h3>
+                <div id="donation3-collapse" class="accordion-collapse collapse" aria-labelledby="donation3-heading"
+                  data-bs-parent="#donation-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="donation3-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#donation3-collapse" aria-expanded="false" aria-controls="donation3-collapse">
-                Question 3
-              </button>
-            </h2>
-            <div id="donation3-collapse" class="accordion-collapse collapse" aria-labelledby="donation3-heading"
-              data-bs-parent="#donation-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
+    
+          <!-- Events -->
+          <div class="pb-5">
+            <h2 id="events" class="h3s text-color1 text-align-left" style="font-weight: bolder; scroll-margin-top: 5em;">Events</h2>
+            <div class="accordion accordion-flush" id="events-accordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="events1-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#events1-collapse" aria-expanded="false" aria-controls="events1-collapse">
+                    Question 1
+                  </button>
+                </h3>
+                <div id="events1-collapse" class="accordion-collapse collapse" aria-labelledby="events1-heading"
+                  data-bs-parent="#events-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="events2-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#events2-collapse" aria-expanded="false" aria-controls="events2-collapse">
+                    Question 2
+                  </button>
+                </h3>
+                <div id="events2-collapse" class="accordion-collapse collapse" aria-labelledby="events2-heading"
+                  data-bs-parent="#events-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="events3-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#events3-collapse" aria-expanded="false" aria-controls="events3-collapse">
+                    Question 3
+                  </button>
+                </h3>
+                <div id="events3-collapse" class="accordion-collapse collapse" aria-labelledby="events3-heading"
+                  data-bs-parent="#events-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Events -->
-      <div class="pb-5">
-        <h3 class="h3s text-color1 text-align-left">Events</h3>
-        <div class="accordion accordion-flush" id="events-accordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="events1-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#events1-collapse" aria-expanded="false" aria-controls="events1-collapse">
-                Question 1
-              </button>
-            </h2>
-            <div id="events1-collapse" class="accordion-collapse collapse" aria-labelledby="events1-heading"
-              data-bs-parent="#events-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
+    
+          <!-- Partnership -->
+          <div class="pb-5">
+            <h2 id="partnership" class="h3s text-color1 text-align-left" style="font-weight: bolder; scroll-margin-top: 5em;">Partnership</h2>
+            <div class="accordion accordion-flush" id="partnership-accordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="partnership1-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#partnership1-collapse" aria-expanded="false" aria-controls="partnership1-collapse">
+                    Question 1
+                  </button>
+                </h3>
+                <div id="partnership1-collapse" class="accordion-collapse collapse" aria-labelledby="partnership1-heading"
+                  data-bs-parent="#partnership-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="events2-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#events2-collapse" aria-expanded="false" aria-controls="events2-collapse">
-                Question 2
-              </button>
-            </h2>
-            <div id="events2-collapse" class="accordion-collapse collapse" aria-labelledby="events2-heading"
-              data-bs-parent="#events-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="partnership2-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#partnership2-collapse" aria-expanded="false" aria-controls="partnership2-collapse">
+                    Question 2
+                  </button>
+                </h3>
+                <div id="partnership2-collapse" class="accordion-collapse collapse" aria-labelledby="partnership2-heading"
+                  data-bs-parent="#partnership-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="events3-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#events3-collapse" aria-expanded="false" aria-controls="events3-collapse">
-                Question 3
-              </button>
-            </h2>
-            <div id="events3-collapse" class="accordion-collapse collapse" aria-labelledby="events3-heading"
-              data-bs-parent="#events-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Partnership -->
-      <div class="pb-5">
-        <h3 class="h3s text-color1 text-align-left">Partnership</h3>
-        <div class="accordion accordion-flush" id="partnership-accordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="partnership1-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#partnership1-collapse" aria-expanded="false" aria-controls="partnership1-collapse">
-                Question 1
-              </button>
-            </h2>
-            <div id="partnership1-collapse" class="accordion-collapse collapse" aria-labelledby="partnership1-heading"
-              data-bs-parent="#partnership-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="partnership2-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#partnership2-collapse" aria-expanded="false" aria-controls="partnership2-collapse">
-                Question 2
-              </button>
-            </h2>
-            <div id="partnership2-collapse" class="accordion-collapse collapse" aria-labelledby="partnership2-heading"
-              data-bs-parent="#partnership-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="partnership3-heading">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#partnership3-collapse" aria-expanded="false" aria-controls="partnership3-collapse">
-                Question 3
-              </button>
-            </h2>
-            <div id="partnership3-collapse" class="accordion-collapse collapse" aria-labelledby="partnership3-heading"
-              data-bs-parent="#partnership-accordion">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Cumque reiciendis eius autem eveniet mollitia, at asperiores
-                suscipit quae similique laboriosam iste minus placeat odit
-                velit quos, nulla architecto amet voluptates.
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="partnership3-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#partnership3-collapse" aria-expanded="false" aria-controls="partnership3-collapse">
+                    Question 3
+                  </button>
+                </h3>
+                <div id="partnership3-collapse" class="accordion-collapse collapse" aria-labelledby="partnership3-heading"
+                  data-bs-parent="#partnership-accordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cumque reiciendis eius autem eveniet mollitia, at asperiores
+                    suscipit quae similique laboriosam iste minus placeat odit
+                    velit quos, nulla architecto amet voluptates.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -307,60 +286,10 @@
   </section>
 
   <!-- Footer -->
-  <section class="bg-color3 p-5 text-center text-md-start">
-    <div class="container">
-      <div class="d-md-flex align-items-start justify-content-between">
-        <div>
-          <h4 class="h4s font-weight-bold">Bilin</h4>
-          <p class="text-color2">
-            Bilin is a platform that makes the donation process easier,
-            allowing forward-thinking people and businesses to connect with
-            nonprofit organizations and community pantries that need their
-            help the most.
-          </p>
-        </div>
-
-        <hr class="w-100 clearfix d-md-none" />
-
-        <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-          <h5 class="h5s text-color2"><b>Navigate</b></h5>
-          <a href="index.html" class="as text-color2">Home</a>
-          <a href="getinvolved.html" class="as text-color2">Get Involved</a>
-          <a href="knowledgehub.html" class="as text-color2">Knowledge Hub</a>
-          <a href="aboutus.html" class="as text-color2">About Us</a>
-          <a href="faq.html" class="as text-color2">FAQ</a>
-        </div>
-
-        <hr class="my-3 d-md-none" />
-
-        <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-          <h5 class="h5s text-color2"><b>Useful Links</b></h5>
-          <a href="#DonationGuidelines" class="as text-color2">Donation Guidelines</a>
-          <a href="#Terms&Conditions" class="as text-color2">Terms & Conditions</a>
-          <a href="#PrivacyPolicy" class="as text-color2">Privacy Policy</a>
-        </div>
-
-        <hr class="my-3 d-md-none" />
-
-        <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-          <h5 class="h5s text-color2"><b>Contact Us</b></h5>
-          <a href="#emailadd" class="as text-color2">teamhiraya@gmail.com</a>
-        </div>
-      </div>
-      <hr />
-      <div class="ps d-flex justify-content-between">
-        <p>&copy 2022 Bilin. All rights reserved.</p>
-        <div>
-          <a class="ps as" href="#">Back to Top</a>
-          <a class="backtotop-img" href="#"><img src="images/backtotop.svg" /></a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <script id="replace_with_footer" src="/scripts/footer.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

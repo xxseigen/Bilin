@@ -15,20 +15,37 @@
     color: #0C2E3D;
 }
 
-.btn-partner {
-    border: 0px;
-    background-color: #F77F00;
-    color: #F8F7F1;
-}
-
-.btn-donate {
-    border: 0px;
-    background-color: #F8D9B5;
-    color: #0C2E3D;
-}
-
 .card-body img {
     max-width: 50px;
+}
+
+#feature {
+    width: 190px;
+    height: 240px;
+    border-radius: 18px;
+    border: 1.3px solid #F77F00;
+    background-color: #F8F7F1;
+}
+
+#feature:hover{
+    width: 190px;
+    height: 240px;
+    border-radius: 18px;
+    border: 1.3px solid #0C2E3D;
+    background-color: #87B547;
+    color: #FDFDFD;
+}
+
+#feature img:last-child {
+    display: none;
+}
+
+#feature:hover img:last-child {
+    display: block;  
+}
+
+#feature:hover img:first-child {
+    display: none;  
 }
 
 .backtotop-img img {
@@ -41,54 +58,49 @@
     height: 23px;
 }
 
+.aside {
+    float: left;
+    position: sticky;
+    top: 7em;
+}
+
 
 
 /* --- */
 .h1s {
     font-size: 60px;
     font-family: 'Archivo Black', sans-serif;
-    color: #0C2E3D;
-    line-height: 68px;
 }
 
 .h2s {
     font-size: 40px;
     font-family: 'Archivo Black', sans-serif;
-    color: #0C2E3D;
 }
 
 .h3s {
     font-size: 23px;
     font-family: 'Ubuntu', sans-serif;
-    color: #0C2E3D;
 }
 
 .h4s {
     font-family: 'Fredoka One', cursive;
-    color: #FDFDFD;
 }
 
 .h5s {
     font-family: 'Ubuntu', sans-serif;
-    color: #0C2E3D;
 }
 
 .ps {
     font-family: 'Ubuntu', sans-serif;
-    color: #0C2E3D;
 }
 
 .as {
     text-decoration: none;
 }
 
-ul li {
-    list-style-type: none;
-}
-
 .btns {
     border-radius: 8px;
-    padding: 6px 12px;
+    padding: 3px 8px;
     cursor: pointer;
 }
 
@@ -132,4 +144,35 @@ ul li {
 
 .text-color3 {
     color: #F77F00;
+}
+
+.text-color4 {
+    color: #87B547;
+}
+
+
+
+/* responsive */
+@media (max-width: 992px) {
+    .h1s {
+        font-size: 40px;     
+    }
+
+    .h2s {
+        font-size: 30px;
+    }
+
+    .ps {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .h1s {
+        font-size: 38px;     
+    }
+
+    .h2s {
+        font-size: 28px;
+    }
 }

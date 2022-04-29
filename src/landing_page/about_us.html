@@ -2,110 +2,114 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Ubuntu&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Bilin</title>
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />  <title>Bilin</title>
 </head>
-
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-color1 py-3">
+    <div class="sticky-top">
+        <script id="replace_with_navbar" src="/scripts/nav.js"></script>
+    </div>
+    
+    <!-- Header -->
+    <section class="p-5 bg-color1">
         <div class="container">
-            <div class="logo">
-                <a class="navbar-brand text-color1" href="#">Bilin</a>
+        <h1 class="h1s pb-4 text-color1 text-center">Meet the Hiraya Team</h1>
+        <div class="img-fluid d-flex justify-content-center" style="margin-bottom: -343px;">
+            <img src="/images/hiraya1.png" alt="">
+            <div class="d-flex justify-content-between" style="flex-direction: column;">
+                <img src="/images/hiraya2.png" alt="">
+                <img src="/images/hiraya3.png" alt="">
             </div>
-
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navmenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link"><span class="sr-only">HOME</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="get_involved.html" class="nav-link">GET INVOLVED</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="knowledge_hub.html" class="nav-link">KNOWLEDGE HUB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about_us.html" class="nav-link">ABOUT US</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="faq.html" class="nav-link">FAQ</a>
-                    </li>
-                </ul>
-                <button class="btns btn-login ms-auto d-md-none">LOG IN</button>
-            </div>
-
-            <button class="btns btn-login ms-auto d-none d-md-block">LOG IN</button>
         </div>
-    </nav>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <section class="bg-color3 p-5 text-center text-md-start">
+    <!-- Our story -->
+    <section class="p-5 bg-color2" style="margin-top: 343px; margin-bottom: 215px;">
         <div class="container">
-            <div class="d-md-flex align-items-start justify-content-between">
-                <div>
-                    <h4 class="h4s font-weight-bold">Bilin</h4>
-                    <p class="text-color2">Bilin is a platform that makes the donation process easier, allowing
-                        forward-thinking people and businesses to connect with nonprofit organizations and community
-                        pantries that need their help the most.</p>
+            <h2 class="h2s text-color4">Our Story</h2>
+            <div class="row d-flex justify-content-center">
+                <div class="col" style="line-height: 38px;">
+                    <p class="ps text-color1" style="text-align: justify; max-width: 600px; font-size: larger;"><b>Team Hiraya</b> are members of the Google DSC Xavier participating in the Solutions Challenge. Inspired to solve the pag-pag issue in the PH and the difficult engagement to NGOs, Hiraya has decided to create Bilin.</p>
+                    <p class="ps text-color1" style="text-align: justify;">We believe that everyone has the spirit to give or donate a portion of what you have, Its just that people find it a hastle connect to the right people. It should’nt be that way. Team Hiraya dreams to start a culture to the commonuity where donatiaon are more often. We aim to also break the stigma of throwing surplus foods and that surplus food is still good food and could feed the hungry.</p>
                 </div>
-
-                <hr class="w-100 clearfix d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Navigate</b></h5>
-                    <a href="index.html" class="as text-color2">Home</a>
-                    <a href="get_involved.html" class="as text-color2">Get Involved</a>
-                    <a href="knowledge_hub.html" class="as text-color2">Knowledge Hub</a>
-                    <a href="about_us.html" class="as text-color2">About Us</a>
-                    <a href="faq.html" class="as text-color2">FAQ</a>
-                </div>
-
-                <hr class="my-3 d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Useful Links</b></h5>
-                    <a href="#DonationGuidelines" class="as text-color2">Donation Guidelines</a>
-                    <a href="#Terms&Conditions" class="as text-color2">Terms & Conditions</a>
-                    <a href="#PrivacyPolicy" class="as text-color2">Privacy Policy</a>
-                </div>
-
-                <hr class="my-3 d-md-none" />
-
-                <div class="d-flex flex-column col-md-2 col-lg-2 col-xl-2">
-                    <h5 class="h5s text-color2"><b>Contact Us</b></h5>
-                    <a href="#emailadd" class="as text-color2">teamhiraya@gmail.com</a>
-                </div>
-            </div>
-            <hr>
-            <div class="ps d-flex justify-content-between">
-                <p>&copy 2022 Bilin. All rights reserved.</p>
-                <div>
-                    <a class="ps as" href="#">Back to Top</a>
-                    <a class="backtotop-img" href="#"><img src="images/backtotop.svg"></a>
+                <div style="width: 30px"></div>
+                <div class="col" style="max-width: max-content;">
+                    <img class="img-fluid" src="/images/illust1.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Our team -->
+    <section class="p-5 bg-color1">
+        <div class="container" style="margin-top: -215px;">
+            <h2 class="h2s text-color4">Our Team</h2>
+            <div class="py-4 d-flex justify-content-center">
+                <div class="row" style="column-gap: 50px;">
+                    <div class="col d-flex justify-content-center">
+                        <div class="col text-center">
+                            <img src="/images/member1.png" alt="" style="width: 180px;">
+                            <h5 class="ps text-color1 pt-3"><b>James Panganiban</b></h5>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="col text-center">
+                            <img src="/images/member2.png" alt="" style="width: 180px;">
+                            <h5 class="ps text-color1 pt-3"><b>Catherine Naldoza</b></h5>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="col text-center">
+                            <img src="/images/member3.png" alt="" style="width: 180px;">
+                            <h5 class="ps text-color1 pt-3"><b>James Jilhaney</b></h5>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="col text-center">
+                            <img src="/images/member4.png" alt="" style="width: 180px;">
+                            <h5 class="ps text-color1 pt-3"><b>Suezanne Tan</b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ambition -->
+    <section class="p-5 bg-color1">
+        <div class="container pb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col" style="line-height: 38px;">
+                    <h2 class="h2s text-color4">Bilin and Its Ambition</h2>
+                    <p class="ps text-color1" style="text-align: justify; max-width: 600px; font-size: larger;">In the Philippines, 1,717 metric tons of food is wasted each day, the Food and Nutrition Research Institute of the Department of Science and Technology said.
+                        Likewise, the International Rice Research Institute said P23 million worth of rice is wasted daily, enough to feed 4.3 million individuals.
+                        The UN Environment Programme (UNEP) said that 931 million tons of food sold – 17 percent of total food available in 2019 – went into waste bins of households, retailers, and food establishments.</p>
+                </div>
+                <div style="width: 30px"></div>
+                <div class="col" style="max-width: max-content;">
+                    <img class="img-fluid" src="/images/illust2.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <script id="replace_with_footer" src="/scripts/footer.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
