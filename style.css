@@ -59,11 +59,33 @@
 }
 
 .aside {
-    float: left;
     position: sticky;
     top: 7em;
 }
 
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.profile-card {
+    border-radius: 10px;
+    background: white;
+    border: 1.5px solid #C4C4C4;
+}
+
+.vertical-align {
+    vertical-align: middle;
+    display: table-cell;
+}
 
 
 /* --- */

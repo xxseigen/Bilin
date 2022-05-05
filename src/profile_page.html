@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Bilin</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="sticky-top">
+        <script id="replace_with_navbar" src="/scripts/nav.js"></script>
+    </div>
+    
+    <!-- Header -->
+    <section style="max-height: fit-content; border: 1.5px solid #C4C4C4;">
+        <div>
+            <div class="fill" style="max-height: 465px;">
+                <img src="https://via.placeholder.com/820x312" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+
+            <div class="px-5 container">
+                <div class="px-3 row">
+                    <div class="d-flex">
+                        <div class="p-2" style="margin-top: -90px;">
+                            <img src="https://via.placeholder.com/170x170" style="height: 170px; width: 170px; border-radius: 50%; border: 8px solid white;">
+                        </div>
+                        <div class="p-2" style="width: 100%;;">
+                            <div class="d-flex justify-content-between">
+                                <div class="h1 text-color1" style="font-weight: bolder;">Organization Name</div>
+                                <button class="btns p bg-color3 text-color2">MESSAGE</button>
+                            </div>
+                            <div>
+                                <button class="btns p">Events</button>
+                                <button class="btns p">Posts</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="p-5 bg-color2">
+        <div class="px-5 container">
+            <div class="px-3 row">
+                <!-- Org info -->
+                <div class="col-4">
+                    <!-- About -->
+                    <div class="aside">
+                        <div class="profile-card" style="padding: 20px;">
+                            <p class="ps text-color1" style="font-size: 20px; font-weight: bold;">About</p>
+                            <p class="ps text-color1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt augue at lacus ultrices consequat. In non nunc sit amet nisi venenatis faucibus eget sed nibh.</p>
+                            <div>
+                                <p class="ps" style="color: #5C5B5B; font-weight: 600;"><i class="bi bi-geo-alt-fill text-color4" style="font-size: 20px;"> </i>Address</p>
+                                <p class="ps" style="color: #5C5B5B; font-weight: 600;"><i class="bi bi-telephone-fill text-color4" style="font-size: 20px;"> </i>Contact number</p>
+                                <p class="ps" style="color: #5C5B5B; font-weight: 600;"><i class="bi bi-envelope-fill text-color4" style="font-size: 20px;"> </i>Email address</p>
+                                <p class="ps" style="color: #5C5B5B; font-weight: 600;"><i class="bi bi-link-45deg text-color4" style="font-size: 20px;;"> </i>Website link</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Google maps -->
+                        <div class="py-3">
+                            <div class="profile-card" id="googleMap" style="width:100%; height: 200px;"></div>
+                            <script>
+                                function myMap() {
+                                    var mapProp= {
+                                        //temporary location only; https://css-tricks.com/lets-make-a-form-that-puts-current-location-to-use-in-a-map/
+                                        center:new google.maps.LatLng(8.454236,124.631897), 
+                                        zoom:15,
+                                    };
+                                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                                }
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZm4A62u1UahYWE9WomHs9yzQG8N-QrfY&callback=myMap"></script>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-4 col">
+                    <!-- Events -->
+                    <h2 class="text-color1 text-align-left" style="font-weight: bolder;">Events</h2>
+                    <h6 style="font-weight: bold;">MONTH</h6>
+                    
+                    <div style="padding-left: 13px;">
+                        <div class="row p-3 profile-card d-flex">
+                            <div class="col fill profile-card" style="height: 140px; max-width: 200px;">
+                                <img src="https://via.placeholder.com/200x140" style="display: block; margin-left: auto; margin-right: auto;">
+                            </div>
+    
+                            <div class="col px-3 d-flex flex-column justify-content-between">
+                                <h4 style="font-weight: bold; color: #5C5B5B;">Event name</h4>
+                                <div class="d-flex">
+                                    <div class="col" style="display: table;">
+                                        <span class="px-1 vertical-align"><img src="/images/donate-icon.svg" class="vertical-align"></span>
+                                        <span class="vertical-align">000 donated</span>
+                                    </div>
+                                    <div class="col" style="display: table;">
+                                        <span class="px-1 vertical-align"><img src="/images/volunteer-icon.svg" class="vertical-align"></span>
+                                        <span class="vertical-align">000 volunteered</span>
+                                    </div>
+                                </div>
+                                <p>Address line 1<br/>Address line 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <script id="replace_with_footer" src="/scripts/footer.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
