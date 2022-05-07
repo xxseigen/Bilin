@@ -7,19 +7,56 @@ const showLoginModal = () => {
 
     modalWrap = document.createElement('div');
     modalWrap.innerHTML = `
-        <div class="modal fade" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Modal body text goes here.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal fade">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0" style="border-radius: 20px; overflow: hidden;">
+                    <div class="d-flex">
+
+                        <div class="p-5 ps bg-color3" style="width: 55%; display: table;">
+                            <div class="vertical-align">
+                                <h3 class="text-color2" style="font-weight: bold;">Welcome to Bilin</h3>
+                                <hr class="rounded" style="width: 20%; height: 4px; color: white;">
+                                <p class="py-3 text-color2" style="font-size: 15px;">Bilin is a platform that makes the donation process easier, allowing forward-thinking people and businesses to connect with non-profit organizations and community pantires</p>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <button class="px-3 py-2 bg-color3 text-color2 rounded-pill" style="border: solid #FDFDFD; font-size: 15px;">Sign Up as Partner</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="px-3 py-2 bg-color3 text-color2 rounded-pill" style="border: solid #FDFDFD; font-size: 15px;">Sign Up as Donor</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-color2 text-center" style="width: 45%;">
+                            <button type="button" class="p-4 btn-close" data-bs-dismiss="modal" aria-label="Close" style="float: right;"></button>
+                            <div class="p-5">
+                                <h3 class="pb-4" style="color: #6A6A6A">Log In</h3>
+                                <div class="d-flex justify-content-center">
+                                    <div class="col">
+                                        <form action="#">
+                                            <div class="py-1">
+                                                <div class="form-floating">
+                                                    <input type="username" class="form-control rounded-pill" placeholder="Username">
+                                                    <label for="floatingInput">Username</label>
+                                                </div>
+                                            </div>
+                                            <div class="py-1">
+                                                <div class="form-floating">
+                                                    <input type="password" class="form-control rounded-pill" placeholder="Password">
+                                                    <label for="floatingPassword">Password</label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="py-4 fill">
+                                            <button class="col px-3 py-2 bg-color3 text-color2 rounded-pill" style="font-weight: 500; border: solid #87B547;">LOG IN</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="ps text-color4" style="font-weight: 500; text-decoration: none;">Forgot password?</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
