@@ -1,89 +1,154 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.11/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.11/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.11/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Bilin</title>
+    <script type="module" src="/public/src/script.js"></script>
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body class="text-color1">
+    <!-- Navbar -->
+    <div class="sticky-top">
+        <script id="replace_with_navbar" src="/scripts/reusable-components.js"></script>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Header -->
+    <section class="header bg-color1 align-items-center text-center text-md-start" style="width: 100%;">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <div class="p-4">
+                    <h1 class="h1s" style="max-width: 460px;">Get involved in solving food hunger</h1>
+                    <p class="ps my-3" style="max-width: 460px">By empowering those who empower others, we at Bilin are
+                        trying to spark the Filipino spirit of Bayanihan like never before.</p>
+                    <button class="btns text-color2" style="border: 0px; background-color: #F77F00;"
+                        onclick="showSignupPartnerModal()">Partner With
+                        Us</button>
+                    <button class="btns text-color1" style="border: 0px; background-color: #f8d9b5;"
+                        onclick="showSignupDonorModal()">Donate</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-md-block" src="/images/donation.png" alt="">
+            </div>
+        </div>
+    </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <!-- Features -->
+    <section class="p-5 bg-color2">
+        <div class="container">
+            <h2 class="h2s text-center">How You Can Help</h2>
+            <p class="ps text-center pb-4">Get involved and be part of our cause.</p>
+
+            <div class="d-flex justify-content-center">
+                <div class="row gy-4">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" id="feature">
+                            <div class="card-body">
+                                <a>
+                                    <img class="img-fluid" src="/images/locate.svg">
+                                    <img class="img-fluid" src="/images/locate-1.svg">
+                                </a>
+                                <h5 class="h5s card-title my-3"><b>Locate</b></h5>
+                                <p class="ps card-text">Find NGOs and community pantries near you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" id="feature">
+                            <div class="card-body">
+                                <a>
+                                    <img class="img-fluid" src="/images/donate.svg">
+                                    <img class="img-fluid" src="/images/donate-1.svg">
+                                </a>
+                                <h5 class="h5s card-title my-3"><b>Donate</b></h5>
+                                <p class="ps card-text">Donate your surplus food to NGOs and nearby community pantries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" id="feature">
+                            <div class="card-body">
+                                <a>
+                                    <img class="img-fluid" src="/images/volunteer.svg">
+                                    <img class="img-fluid" src="/images/volunteer-1.svg">
+                                </a>
+                                <h5 class="h5s card-title my-3"><b>Volunteer</b></h5>
+                                <p class="ps card-text">Volunteer on events organized by NGOs like feeding programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" id="feature">
+                            <div class="card-body">
+                                <a>
+                                    <img class="img-fluid" src="/images/initiate.svg">
+                                    <img class="img-fluid" src="/images/initiate-1.svg">
+                                </a>
+                                <h5 class="h5s card-title my-3"><b>Initiate</b></h5>
+                                <p class="ps card-text">Co-host a feeding program with NGOs or set up a community
+                                    pantry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="bg-color1 pl-5 pr-5 pb-5 text-center text-md-start">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-center">
+                <img class="img-fluid" src="/images/philmap.svg" alt="" style="max-height: 600px; margin-bottom: 5%;">
+                <div style="width: min-content; margin-left: 15%;">
+                    <h2 class="h2s" style="margin-bottom: 5%; margin-top: 12%;">Our Mission</h2>
+                    <p class="ps" , style="font-size: larger;">The Hiraya team is trying to address the prevalent food
+                        hunger problem in the country
+                        with the Bilin app. Bilin is a platform that makes the donation process easier, allowing
+                        forward-thinking people and businesses to connect with nonprofit organizations and community
+                        pantries that need their help the most.</p>
+                    <p class="ps" , style="font-size: larger;">We are prioritising the donation of surplus food to
+                        tackle two of the most difficult
+                        SDGs: No Hunger and Food Waste.</p>
+                    <div class="d-flex align-items-center justify-content-center"
+                        style="margin-top: 10%; margin-right: 5%;">
+                        <div class="mx-5 text-center">
+                            <h1 class="h1s text-color3">19</h5>
+                                <h5 class="h5s text-color1"><b>Partnered<br>With Us</b></h5>
+                        </div>
+                        <div class="mx-5 text-center">
+                            <h1 class="h1s text-color3">420</h5>
+                                <h5 class="h5s text-color1"><b>Donations<br>Received</b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <script id="replace_with_footer" src="/scripts/reusable-components.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://www.gstatic.com/Firebasejs/7.22.0/Firebase-firestore.js"></script> -->
+
+    <script src="/scripts/modals.js"></script>
+</body>
+
 </html>
